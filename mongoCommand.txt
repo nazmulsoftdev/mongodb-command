@@ -1,0 +1,61 @@
+// show all database
+
+1) show dbs
+
+// create or move previous database
+
+2) use my-test
+
+// check which database you are in
+
+3) db+Enter
+
+// detele database
+
+4) db.dropDatabase()
+
+// check how many collection in this database
+
+5) show collections
+
+// how to insert data in collection (insertOne()) or (insertMany())
+
+6) db.students.insertOne({name:"Nazmul",age:24,lang:['C','C++','java']})
+
+// how to see collection of all documents
+
+7) db.students.find()
+
+// how to see collection of documents with limit amout data
+
+8) db.students.find().limit(4)
+
+// how to see collection of specific document
+
+9) db.student.find({name:"Nazmul"})
+
+// update data from documents
+
+10) db.student.updateOne({name:"Nazmul Islam"},{$set:{name:"Anisul Islam"}})
+
+//update more than one user data
+
+12) db.students.updateMany({age:22},{$set:{salary:"2k"}})
+
+// delete a single user
+
+13) db.students.deleteOne({age:22})
+
+// find a user gather than or less than
+
+14) db.studnets.find({age:{$lte:20}}) / db.studnets.find({age:{$gte:2}}) / db.studnets.find({age:{$lt:2}})
+
+// use condition for multpliy query
+
+15) db.students.find({$or:[{name:"Nazmul"},{age:20}]})
+
+
+
+
+
+
